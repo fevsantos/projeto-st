@@ -12,8 +12,8 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+import "../plugins/questions"
+import "../plugins/script"
 import "controllers"
 import "bootstrap"
 import "../stylesheets/application"
-import "../plugins/questions"
-import "../plugins/script"
