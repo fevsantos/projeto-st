@@ -1,5 +1,5 @@
 meta_product_name: "Smart Tests"
 meta_title: "Smart Tests - Teach.Think.Tests"
 meta_description: "Made for Teachers. Even better for Students"
-meta_image: "facebook.png" # should exist in `app/assets/images/`
+meta_image: "face.png" # should exist in `app/assets/images/`
 twitter_account: "@smarttests"   # required for Twitter Cards
