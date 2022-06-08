@@ -7,6 +7,7 @@ There is the computation of student grades and other features.
 
 This project was presented as the final project of the Le Wagon FullStack Web Development Course.
 
+Made by <a href="https://github.com/DiegoRLeal/"> Diego Leal </a> e <a href="https://github.com/fevsantos/"> Fê Santos </a>
 -------------------------------------------
 For other Ruby on Rails students:
 
