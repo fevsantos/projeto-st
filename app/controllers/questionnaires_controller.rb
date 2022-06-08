@@ -87,7 +87,6 @@ class QuestionnairesController < ApplicationController
   end
 
   def destroy
-    raise
     @questionnaire.destroy
 
     respond_to do |format|
@@ -113,9 +112,9 @@ class QuestionnairesController < ApplicationController
     @grades.each do |grade|
       if grade.user_id == params[:student_grade][:user_id].to_i
         grade.update(repeat: params["student_grade"]["repeat"])
-        redirect_to grades_path(@questionnaire)
       end
     end
+    redirect_to grades_path(@questionnaire)
   end
 
   private
