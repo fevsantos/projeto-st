@@ -1,5 +1,6 @@
 <%= render 'shared/navbar' %>
 
+
 <div class="row3 justify-content-center mt-4 mb-5">
   <div class="col-md-3" id="mysite">
 
@@ -77,7 +78,7 @@ copybutton.onclick = ()=>{
   copybutton.innerHTML = "Copied!"
 }</script>
 <%else%>
-
+<div onmousedown="return false" onselectstart="return false">
 <div class='mt-8 ml-5'>
 
 <script>
@@ -175,3 +176,5 @@ copybutton.onclick = ()=>{
 
 </div>
 <%end%>
+
+  </div>
