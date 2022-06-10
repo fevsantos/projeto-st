@@ -19,7 +19,6 @@
     <%= form.fields_for :questions do |question| %>
       <%= render 'question_fields', form: question %>
     <% end %>
-
 <%# <div class="container"> %>
     <div data-nested-form-target="add_item">
       <%= link_to "✚ Question", "#", data: { action: "nested-form#add_association" }, class: "btn9 btn-secondary", id:"add-question" %>
