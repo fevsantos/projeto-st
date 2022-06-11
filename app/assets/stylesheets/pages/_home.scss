@@ -382,7 +382,6 @@
   font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
   margin-left: 12px
-
 }
 
 .btn_:hover {
@@ -401,6 +400,126 @@
   width: 70px;
   height: 70px;
 }
+
+.btn_grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -400px;
+  // height: 100vh;
+  text-decoration: none;
+  background-color: #0f3d5e;
+  border: 2px solid #0f3d5e;
+  color: white;
+  border-radius: 40px;
+  transition-duration: 0.4s;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 300px
+}
+
+.btn_grade:hover {
+  background-color:white;
+  color: #0f3d5e;
+  text-decoration: none;
+}
+
+.btn_tell {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -400px;
+  // height: 100vh;
+  text-decoration: none;
+  background-color: #0f3d5e;
+  border: 2px solid #0f3d5e;
+  color: white;
+  border-radius: 40px;
+  transition-duration: 0.4s;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 300px
+}
+
+.btn_tell:hover {
+  background-color:white;
+  color: #0f3d5e;
+  text-decoration: none;
+}
+
+.btn_back {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -400px;
+  // height: 100vh;
+  text-decoration: none;
+  background-color: #0f3d5e;
+  border: 2px solid #0f3d5e;
+  color: white;
+  border-radius: 40px;
+  transition-duration: 0.4s;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 300px
+}
+
+.btn_back:hover {
+  background-color:white;
+  color: #0f3d5e;
+  text-decoration: none;
+}
+
+.btn_edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -400px;
+  // height: 100vh;
+  text-decoration: none;
+  background-color: #0f3d5e;
+  border: 2px solid #0f3d5e;
+  color: white;
+  border-radius: 40px;
+  transition-duration: 0.4s;
+  font-size: 15px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  margin-left: 300px
+}
+
+.btn_edit:hover {
+  background-color:white;
+  color: #0f3d5e;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
   // Smallest device
