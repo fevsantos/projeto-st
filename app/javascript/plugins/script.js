@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 
 
->>>>>>> a200f6318e42ec458648281b8091041aac57e1a4
 const runScript = () => {
 
   //selecting all required elements
@@ -74,11 +71,7 @@ const runScript = () => {
     text_score.value = userScore
     document.getElementById("submitscore").submit();
     setTimeout(() => {
-<<<<<<< HEAD
-      window.location.replace("http://smarttests/questionnaires/"); //reload the current window
-=======
-      window.location.replace("http://localhost:3000"); //reload the current window
->>>>>>> a200f6318e42ec458648281b8091041aac57e1a4
+      window.location.replace("https://www.smarttests.net/questionnaires/"); 
     }, 500);
     }
 

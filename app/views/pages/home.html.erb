@@ -3,14 +3,19 @@
     <%= image_tag 'logo.png', class: "img-fluid" %>
 
     <div class="btnhome">
-     <% if user_signed_in? %>
+      <% if user_signed_in? %>
         <p class="botao-home"><%= link_to 'I\'m a teacher!', questionnaires_path %></p>
         <p class="botao-home"><%= link_to 'I\'m a student!', questionnaires_path %></p>
-       <% else %>
-          <p class="botao-home"><%= link_to 'I\'m a teacher', new_user_session_path %></p>
-          <p class="botao-home"><%= link_to 'I\'m a student', new_user_session_path %></p>
-          </li>
-        <% end %>
-        </div>
+      <% else %>
+        <p class="botao-home"><%= link_to 'I\'m a teacher', new_user_session_path %></p>
+        <p class="botao-home" id="studbutton"><%= link_to 'I\'m a student', new_user_session_path %></p>
+        <script>
+          let stud = document.querySelector("#studbutton")
+          console.log(stud)
+          stud.onclick = ()=>{
+          sessionStorage.getItem('#studbutton')}
+        </script>
+      <% end %>
     </div>
   </div>
+</div>
