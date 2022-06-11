@@ -73,7 +73,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="copymessage">
         Hello Students! Your <%=@questionnaire.name%> Test is waiting for you!
         Sign up to <a href="http://www.smarttests.net">http://www.smarttests.net </a> and use the Token: <strong> <%= @questionnaire.token %> </strong> to start. <br>
         Be careful: You can only take the quiz once! <br>
@@ -95,7 +95,7 @@
 let copybutton = document.querySelector("#copy")
 copybutton.onclick = ()=>{
   /* Get the text field */
-  var copyText = document.querySelector(".modal-body");
+  var copyText = document.querySelector("#copymessage");
 
   /* Select the text field */
    /* Copy the text inside the text field */
