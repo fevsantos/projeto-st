@@ -40,7 +40,29 @@
 </button>
   <%= link_to 'Edit', edit_questionnaire_path(@questionnaire), class: "btn_edit" %>
 <%= link_to '◀ Back', questionnaires_path, class: "btn_back" %>
+<p><%= link_to 'Delete', questionnaires_path, "data-toggle"=>"modal", "data-target"=> "#deleteModal", class: "btn" %></p>
+<!--Modal Window for Delete Test-->
+                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete a test</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure you want to delete your <%=@questionnaire.name%> Test? <br>
+                        Be careful: You can't reactivate deleted tests <br>
+                      </div>
+                      <div class="modal-footer">
 
+                        <p><%= button_to "Yes, Delete!", @questionnaire, method: :delete, class: "btn7" %></p>
+                        <button type="button" class="btn7 btn-secondary" data-dismiss="modal">No, keep it</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
