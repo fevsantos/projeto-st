@@ -218,9 +218,11 @@ h2.new{
 .container_img2 img{
   width: 500px;
   margin-bottom: -21px;
-  position: relative;
-  margin-top: 12px;
-  margin-left: -125px;
+  // position: relative;
+  // margin-top: 12px;
+  // margin-left: -125px;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Front card's bottom section */
