@@ -104,14 +104,14 @@ copybutton.onclick = ()=>{
 }</script>
 <%else%>
 <div onmousedown="return false" onselectstart="return false">
-<div class='mt-8 ml-5'>
+<div class='mt-8'>
 
 <script>
 //Switched tab
-  window.onblur = function () {
-    // do some stuff after tab was changed e.g.
-    alert('You switched the tab');
-}
+//   window.onblur = function () {
+//     // do some stuff after tab was changed e.g.
+//     alert('You switched the tab');
+// }
 
   let siteTitle = '';
   window.addEventListener('blur', () => {
@@ -127,9 +127,9 @@ copybutton.onclick = ()=>{
 <% if StudentGrade.where(questionnaire_id: @questionnaire.id, user_id: current_user.id, repeat: false).present?%>
 <div class="container_img2">
 <%= image_tag "testdone.png" %>
+<%= link_to '◀ Back', questionnaires_path, class: "btn_" %>
 </div>
 
-<%= link_to '◀ Back', questionnaires_path, class: "btn_" %>
 </div>
 <%else%>
 <div class="start_btn"><button>Start Test</button></div>
