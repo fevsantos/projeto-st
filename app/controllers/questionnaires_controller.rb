@@ -65,7 +65,7 @@ class QuestionnairesController < ApplicationController
 
     respond_to do |format|
       if @questionnaire.save
-        format.html { redirect_to questionnaire_url(@questionnaire), notice: "Questionnaire was successfully created." }
+        format.html { redirect_to quest_path(@questionnaire), notice: "Questionnaire was successfully created." }
         format.json { render :show, status: :created, location: @questionnaire }
       else
         format.html { render :new, status: :unprocessable_entity }

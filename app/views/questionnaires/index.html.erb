@@ -50,34 +50,11 @@
                       <h3 class="inside-page__text">
                         <p><%= link_to 'Show', questionnaire, class: "btn" %></p>
                         <p><%= link_to 'Edit', edit_questionnaire_path(questionnaire), class: "btn" %></p>
-                        <p><%= link_to 'Delete', questionnaires_path, "data-toggle"=>"modal", "data-target"=> "#exampleModal", class: "btn" %></p>
-                        <%# <p><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">✖</button></p> %>
                       </h3>
                     </div>
                   </div>
                 </div>
-                <!--Modal Window for Delete Test-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete a test</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Are you sure you want to delete your <%=questionnaire.name%> Test? <br>
-                        Be careful: You can't reactivate deleted tests <br>
-                      </div>
-                      <div class="modal-footer">
 
-                        <p><%= button_to "Yes, Delete!", questionnaire, method: :delete, class: "btn7" %></p>
-                        <button type="button" class="btn7 btn-secondary" data-dismiss="modal">No, keep it</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <%end%>
               </div>
         </div>
