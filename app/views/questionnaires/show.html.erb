@@ -2,22 +2,24 @@
 
 
 <div class="row3 justify-content-center mt-4 mb-5">
-  <div class="col-md-3" id="mysite">
+  <div class="col-md-6" id="mysite">
 
 
   <% if current_user.teacher_role? %>
-  <h3 class="mb-4"><strong><%= @questionnaire.name %></strong></h3>
-    <h5>Token.: <%= @questionnaire.token %></h5>
+  <section>
+  <h3 class="mb-4 text-center"><strong><%= @questionnaire.name %></strong></h3>
+    <h5 class="text-center"><strong>Token: </strong> <%= @questionnaire.token %></h5> <br>
     <% @questionnaire.questions.each do |question| %>
-    <h5 class="mt-3 mb-4"><%= question.name %></h5>
-
+    <div class="que_text" ><%= question.name %> </div>
+    <div class="option_list">
     <% case question.question_type %>
       <% when 'single_choice' %>
         <% question.answers.each do |answer| %>
-          <h5>
-            <%= radio_button_tag question.id, answer.id %>
-            <%= answer.name %>
-          </h5>
+          <% if answer.correct == true %>
+            <div class="option correct"> <%= answer.name %><div class="icon tick"><i class="fas fa-check"></i></div> </div>
+          <% else %>
+          <div class="option"> <%= answer.name %><div class="icon cross"><i class="fas fa-times"></i></div></div>
+          <%end%>
         <% end %>
       <% when 'multiple_choice' %>
         <% question.answers.each do |answer| %>
@@ -29,6 +31,7 @@
       <% when 'long_answer' %>
         <%= text_area_tag question.id %>
     <% end %>
+    </div>
     <% end %>
     <%= link_to 'Student\'s Grades', grades_path, class: "btn btn-outline-secondary mt-3" %>
 <!-- Button trigger modal -->
