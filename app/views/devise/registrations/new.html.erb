@@ -1,6 +1,7 @@
 <div class="container mt-3">
   <div class="row justify-content-center">
     <div class="col-md-3">
+
 <h2 class="log">Sign up</h2>
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -22,7 +23,7 @@
     <%= f.input :password_confirmation,
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
-    <div class="form-check form-switch">
+    <div class="form-check form-switch", id="checkteacher">
     <%= f.input :teacher_role,
                 label: 'I\'m a teacher',
                 as: :boolean, checked_value: true, unchecked_value: false %>
@@ -37,6 +38,16 @@
 <%= render "devise/shared/links" %>
  <%= link_to "Back", new_user_session_path, class:"btn" %>
     </div>
+    <script>
+        let info = sessionStorage.getItem('#studbutton')
+        let check = document.querySelector("#checkteacher")
+        console.log(check)
+        console.log(info)
+        if (info == "student"){
+          check.style.visibility = 'hidden'
+
+        }
+      </script>
   </div>
 </div>
 </div>
