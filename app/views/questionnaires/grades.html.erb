@@ -77,7 +77,7 @@
              <p><td><% if (grade.score * 100) / @nquestions >= 70 %>
              <p class="aprov"> ✔ Approved</td> </p>
              <% else %>
-             <p class="reprov">✘ Disapproved</td> </p>
+             <p class="reprov">✘ Failed</td> </p>
              <%end%>
   <td> <%= simple_form_for grade, url: gradesedit_path do |f| %>
   <div class="form-check form-switch">
